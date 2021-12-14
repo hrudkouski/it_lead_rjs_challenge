@@ -1,5 +1,5 @@
-import React from 'react';
+import { FC } from 'react';
 
-export const App = () => (
-    <div> Hello world </div>
-);
+import { ReturnComponentType } from 'types';
+
+export const App: FC = (): ReturnComponentType => <div> Hello world!!!!!</div>;
