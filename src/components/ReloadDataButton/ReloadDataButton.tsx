@@ -1,7 +1,6 @@
 import { FC } from 'react';
 
-import s from './ReloadDataButton.module.css';
-
+import s from 'components/ReloadDataButton/ReloadDataButton.module.css';
 import { ReturnComponentType } from 'types';
 
 type ReloadDataButtonType = {
@@ -14,7 +13,7 @@ export const ReloadDataButton: FC<ReloadDataButtonType> = ({
   title,
 }): ReturnComponentType => (
   <div className={s.wrapper}>
-    <button type="button" onClick={reloadData}>
+    <button className={s.button} type="button" onClick={reloadData}>
       {title}
     </button>
   </div>

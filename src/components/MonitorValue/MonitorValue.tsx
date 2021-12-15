@@ -1,18 +1,17 @@
 import { FC } from 'react';
 
-import s from './Round.module.css';
-
+import s from 'components/MonitorValue/MonitorValue.module.css';
 import { ReturnComponentType } from 'types';
 
 type RoundType = {
   title: string;
-  value: number | string;
+  value: string;
 };
 
-export const Round: FC<RoundType> = ({ value, title }): ReturnComponentType => (
+export const MonitorValue: FC<RoundType> = ({ value, title }): ReturnComponentType => (
   <div className={s.round}>
     <div className={s.wrapperRound}>
-      <span>{title}</span>
+      <span className={s.title}>{title}</span>
       <div>{value}</div>
     </div>
   </div>

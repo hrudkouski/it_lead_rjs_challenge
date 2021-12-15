@@ -1,19 +1,18 @@
 import { ChangeEvent, KeyboardEvent, FC, useState } from 'react';
 
-import data1234 from '../data/data-1234.json';
-import data4321 from '../data/data-4321.json';
-
-import s from './Display.module.css';
-
-import { ReloadDataButton } from 'components/ReloadDataButton';
-import { Round } from 'components/Round';
+import { AddNewItem } from 'components/AddNewItem/AddNewItem';
+import s from 'components/Display/Display.module.css';
+import { MonitorValue } from 'components/MonitorValue/MonitorValue';
+import { ReloadDataButton } from 'components/ReloadDataButton/ReloadDataButton';
+import data1234 from 'data/data-1234.json';
+import data4321 from 'data/data-4321.json';
 import { ReturnComponentType } from 'types';
 import {
   getArithmeticMean,
   getMedian,
   getMode,
   getStandardDeviation,
-} from 'utils/function_helpers';
+} from 'utils/calculation_value_functions';
 
 export const Display: FC = (): ReturnComponentType => {
   const ZERO = 0;
@@ -65,29 +64,23 @@ export const Display: FC = (): ReturnComponentType => {
   return (
     <div className={s.app}>
       <div className={s.wrapper}>
-        <Round value={mean} title="Mean" />
-        <Round value={median} title="Median" />
-        <Round value={stdDeviation} title="Std deviation" />
-        <Round value={mode} title="Mode" />
+        <MonitorValue value={mean} title="Mean" />
+        <MonitorValue value={median} title="Median" />
+        <MonitorValue value={stdDeviation} title="Std deviation" />
+        <MonitorValue value={mode} title="Mode" />
       </div>
-
       <div className={s.wrapperButton}>
         <ReloadDataButton reloadData={json1234Handler} title="Reload JSON-1234 Data" />
         <ReloadDataButton reloadData={json4321Handler} title="Reload JSON-4321 Data" />
       </div>
-
-      <div style={{ marginTop: '30px' }}>
-        <input
-          onChange={onChangeHandler}
-          value={inputNumber}
-          onKeyPress={onKeyPressAddItem}
-          placeholder="Enter a number..."
-          type="number"
+      <div className={s.wrapperInput}>
+        <AddNewItem
+          error={error}
+          inputNumber={inputNumber}
+          onSubmitHandler={onSubmitHandler}
+          onKeyPressAddItem={onKeyPressAddItem}
+          onChangeHandler={onChangeHandler}
         />
-        <button type="submit" onClick={onSubmitHandler}>
-          Submit
-        </button>
-        <div style={{ color: 'red' }}>{error}</div>
       </div>
     </div>
   );

@@ -1,0 +1,32 @@
+.wrapper {
+}
+
+.input:focus {
+    outline: none;
+}
+
+.input {
+    background: #1b4a73;
+    outline: none;
+    opacity: 1;
+    width: 400px;
+    height: 40px;
+    color: #fff;
+    font-size: large;
+}
+
+.button {
+    width: 65px;
+    height: 45px;
+    outline: none;
+    color: #070707;
+    background: #CB4F87;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    font-weight: bold;
+}
+
+.error {
+    color: red;
+}

@@ -17,3 +17,10 @@
     height: 90%;
     font-size: 20px;
 }
+
+.title {
+    font-weight: bold;
+    color: black;
+    font-size: x-large;
+    margin-bottom: 7px;
+}
