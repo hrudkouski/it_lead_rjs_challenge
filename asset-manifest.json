@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/it_lead_rjs_challenge/static/css/main.dfbe2e8f.chunk.css",
-    "main.js": "/it_lead_rjs_challenge/static/js/main.cd00a21a.chunk.js",
-    "main.js.map": "/it_lead_rjs_challenge/static/js/main.cd00a21a.chunk.js.map",
-    "runtime-main.js": "/it_lead_rjs_challenge/static/js/runtime-main.fea91054.js",
-    "runtime-main.js.map": "/it_lead_rjs_challenge/static/js/runtime-main.fea91054.js.map",
-    "static/js/2.8e4d3403.chunk.js": "/it_lead_rjs_challenge/static/js/2.8e4d3403.chunk.js",
-    "static/js/2.8e4d3403.chunk.js.map": "/it_lead_rjs_challenge/static/js/2.8e4d3403.chunk.js.map",
-    "static/js/3.d0f4ca00.chunk.js": "/it_lead_rjs_challenge/static/js/3.d0f4ca00.chunk.js",
-    "static/js/3.d0f4ca00.chunk.js.map": "/it_lead_rjs_challenge/static/js/3.d0f4ca00.chunk.js.map",
+    "main.css": "/it_lead_rjs_challenge/static/css/main.720ee69e.chunk.css",
+    "main.js": "/it_lead_rjs_challenge/static/js/main.65547036.chunk.js",
+    "main.js.map": "/it_lead_rjs_challenge/static/js/main.65547036.chunk.js.map",
+    "runtime-main.js": "/it_lead_rjs_challenge/static/js/runtime-main.ff65ad03.js",
+    "runtime-main.js.map": "/it_lead_rjs_challenge/static/js/runtime-main.ff65ad03.js.map",
+    "static/js/2.20f13e13.chunk.js": "/it_lead_rjs_challenge/static/js/2.20f13e13.chunk.js",
+    "static/js/2.20f13e13.chunk.js.map": "/it_lead_rjs_challenge/static/js/2.20f13e13.chunk.js.map",
+    "static/js/3.330c05e0.chunk.js": "/it_lead_rjs_challenge/static/js/3.330c05e0.chunk.js",
+    "static/js/3.330c05e0.chunk.js.map": "/it_lead_rjs_challenge/static/js/3.330c05e0.chunk.js.map",
     "index.html": "/it_lead_rjs_challenge/index.html",
-    "static/css/main.dfbe2e8f.chunk.css.map": "/it_lead_rjs_challenge/static/css/main.dfbe2e8f.chunk.css.map",
-    "static/js/2.8e4d3403.chunk.js.LICENSE.txt": "/it_lead_rjs_challenge/static/js/2.8e4d3403.chunk.js.LICENSE.txt"
+    "static/css/main.720ee69e.chunk.css.map": "/it_lead_rjs_challenge/static/css/main.720ee69e.chunk.css.map",
+    "static/js/2.20f13e13.chunk.js.LICENSE.txt": "/it_lead_rjs_challenge/static/js/2.20f13e13.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.fea91054.js",
-    "static/js/2.8e4d3403.chunk.js",
-    "static/css/main.dfbe2e8f.chunk.css",
-    "static/js/main.cd00a21a.chunk.js"
+    "static/js/runtime-main.ff65ad03.js",
+    "static/js/2.20f13e13.chunk.js",
+    "static/css/main.720ee69e.chunk.css",
+    "static/js/main.65547036.chunk.js"
   ]
 }
