@@ -1,0 +1,19 @@
+.round {
+    border: 3px solid #FF7CAE;
+    border-radius: 100px;
+    width: 150px;
+    height: 150px;
+    text-align: center;
+    background-color: #276899;
+    color: #fff;
+}
+
+.wrapperRound {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 90%;
+    font-size: 20px;
+}

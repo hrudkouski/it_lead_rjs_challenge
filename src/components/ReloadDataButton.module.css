@@ -1,0 +1,9 @@
+.wrapper button {
+    padding: 25px;
+    background-color: burlywood;
+    border-radius: 35px;
+}
+
+.wrapper button:hover {
+    cursor: pointer;
+}

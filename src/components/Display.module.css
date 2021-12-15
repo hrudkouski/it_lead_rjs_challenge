@@ -1,0 +1,21 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.app {
+    background-color: #0E1621;
+    height: 50vw;
+    padding: 30px;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-around;
+}
+
+.wrapperButton {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+}
