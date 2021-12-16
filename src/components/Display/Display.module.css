@@ -12,20 +12,34 @@ body {
     justify-content: center;
 }
 
-.wrapper {
+.wrapperMonitor {
     display: flex;
     justify-content: space-around;
-}
-
-.wrapperButton {
-    margin-top: 50px;
-    display: flex;
-    justify-content: space-evenly;
+    margin-bottom: 100px;
 }
 
 .wrapperInput {
-    margin-top: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 100px;
+}
+
+.wrapperButtons {
     display: flex;
     justify-content: space-evenly;
 }
+
+@media (max-width: 768px) {
+    .wrapperMonitor {
+        flex-wrap: wrap;
+        margin-top: 25px;
+    }
+
+    .wrapperInput {
+        align-items: center;
+        margin-bottom: 10px;
+    }
+}
+
+
 

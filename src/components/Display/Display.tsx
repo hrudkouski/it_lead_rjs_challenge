@@ -1,7 +1,7 @@
-import { ChangeEvent, KeyboardEvent, FC, useState } from 'react';
+import { FC, useState } from 'react';
 
 import { AddNewItem } from 'components/AddNewItem/AddNewItem';
-import s from 'components/Display/Display.module.css';
+import styles from 'components/Display/Display.module.css';
 import { MonitorValue } from 'components/MonitorValue/MonitorValue';
 import { ReloadDataButton } from 'components/ReloadDataButton/ReloadDataButton';
 import data1234 from 'data/data-1234.json';
@@ -12,13 +12,11 @@ import {
   getMedian,
   getMode,
   getStandardDeviation,
-} from 'utils/calculation_value_functions';
+} from 'utils/arithmetic_values_functions';
 
 export const Display: FC = (): ReturnComponentType => {
-  const ZERO = 0;
-  const [arrNumbers, setArrNumbers] = useState<number[]>([ZERO, ZERO]);
-  const [inputNumber, setInputNumber] = useState<string>('');
-  const [error, setError] = useState<string | null>(null);
+  const VALUE = 0;
+  const [arrNumbers, setArrNumbers] = useState<number[]>([VALUE, VALUE]);
 
   const mean = getArithmeticMean(arrNumbers);
   const median = getMedian(arrNumbers);
@@ -29,58 +27,28 @@ export const Display: FC = (): ReturnComponentType => {
     setArrNumbers([...arrNumbers, item]);
   };
 
-  const onChangeHandler = (e: ChangeEvent<HTMLInputElement>): void => {
-    const { value } = e.currentTarget;
-    setInputNumber(value);
-  };
-
-  const onSubmitHandler = (): void => {
-    const trimmedTitle = inputNumber.trim();
-    if (trimmedTitle) {
-      addItem(Number(trimmedTitle));
-      setInputNumber('');
-    } else {
-      setError('Please, write your number');
-    }
-  };
-
-  const onKeyPressAddItem = (e: KeyboardEvent<HTMLInputElement>): void => {
-    if (error !== null) {
-      setError(null);
-    }
-    if (e.key === 'Enter') {
-      onSubmitHandler();
-    }
-  };
-
-  const json1234Handler = (): void => {
+  const setJson1234Data = (): void => {
     setArrNumbers(data1234.data);
   };
 
-  const json4321Handler = (): void => {
+  const setJson4321Data = (): void => {
     setArrNumbers(data4321.data);
   };
 
   return (
-    <div className={s.app}>
-      <div className={s.wrapper}>
+    <div className={styles.app}>
+      <div className={styles.wrapperMonitor}>
         <MonitorValue value={mean} title="Mean" />
         <MonitorValue value={median} title="Median" />
         <MonitorValue value={stdDeviation} title="Std deviation" />
         <MonitorValue value={mode} title="Mode" />
       </div>
-      <div className={s.wrapperButton}>
-        <ReloadDataButton reloadData={json1234Handler} title="Reload JSON-1234 Data" />
-        <ReloadDataButton reloadData={json4321Handler} title="Reload JSON-4321 Data" />
+      <div className={styles.wrapperInput}>
+        <AddNewItem addNewItem={addItem} />
       </div>
-      <div className={s.wrapperInput}>
-        <AddNewItem
-          error={error}
-          inputNumber={inputNumber}
-          onSubmitHandler={onSubmitHandler}
-          onKeyPressAddItem={onKeyPressAddItem}
-          onChangeHandler={onChangeHandler}
-        />
+      <div className={styles.wrapperButtons}>
+        <ReloadDataButton reloadData={setJson1234Data} title="Reload JSON-1234 Data" />
+        <ReloadDataButton reloadData={setJson4321Data} title="Reload JSON-4321 Data" />
       </div>
     </div>
   );

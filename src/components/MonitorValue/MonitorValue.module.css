@@ -1,4 +1,4 @@
-.round {
+.wrapperRound {
     border: 3px solid #FF7CAE;
     border-radius: 100px;
     width: 150px;
@@ -8,7 +8,7 @@
     color: #fff;
 }
 
-.wrapperRound {
+.round {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -18,9 +18,22 @@
     font-size: 20px;
 }
 
+.wrapperRound:hover {
+    transform: scale(1.2) rotate(360deg);
+    transition: 0.5s;
+    cursor: cell;
+}
+
 .title {
     font-weight: bold;
     color: black;
     font-size: x-large;
     margin-bottom: 7px;
 }
+
+@media (max-width: 768px) {
+    .wrapperRound {
+        margin-bottom: 20px;
+    }
+}
+
