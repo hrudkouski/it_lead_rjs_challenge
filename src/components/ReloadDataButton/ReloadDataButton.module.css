@@ -1,7 +1,7 @@
 .button {
     width: 200px;
     height: 50px;
-    border: solid white 2px;
+    border: solid rgba(39, 104, 153, 0.8) 4px;
     outline: none;
     color: #000;
     background: #CB4F87;
@@ -51,7 +51,6 @@
     background: #CB4F87;
     left: 0;
     top: 0;
-    border-radius: 5px;
 }
 
 @keyframes glowing {
