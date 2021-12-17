@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/it_lead_rjs_challenge/static/css/main.a80d6179.chunk.css",
+    "main.css": "/it_lead_rjs_challenge/static/css/main.21f89c5f.chunk.css",
     "main.js": "/it_lead_rjs_challenge/static/js/main.ee4463ae.chunk.js",
     "main.js.map": "/it_lead_rjs_challenge/static/js/main.ee4463ae.chunk.js.map",
     "runtime-main.js": "/it_lead_rjs_challenge/static/js/runtime-main.ff65ad03.js",
@@ -10,13 +10,13 @@
     "static/js/3.330c05e0.chunk.js": "/it_lead_rjs_challenge/static/js/3.330c05e0.chunk.js",
     "static/js/3.330c05e0.chunk.js.map": "/it_lead_rjs_challenge/static/js/3.330c05e0.chunk.js.map",
     "index.html": "/it_lead_rjs_challenge/index.html",
-    "static/css/main.a80d6179.chunk.css.map": "/it_lead_rjs_challenge/static/css/main.a80d6179.chunk.css.map",
+    "static/css/main.21f89c5f.chunk.css.map": "/it_lead_rjs_challenge/static/css/main.21f89c5f.chunk.css.map",
     "static/js/2.29c7f8f1.chunk.js.LICENSE.txt": "/it_lead_rjs_challenge/static/js/2.29c7f8f1.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.ff65ad03.js",
     "static/js/2.29c7f8f1.chunk.js",
-    "static/css/main.a80d6179.chunk.css",
+    "static/css/main.21f89c5f.chunk.css",
     "static/js/main.ee4463ae.chunk.js"
   ]
 }
